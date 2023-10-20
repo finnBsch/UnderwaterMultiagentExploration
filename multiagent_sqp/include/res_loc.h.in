@@ -1,0 +1,8 @@
+//
+// Created by finn on 6/6/23.
+//
+
+#ifndef SQP_RES_LOC_H_IN_H
+#define SQP_RES_LOC_H_IN_H
+#define RES_LOC "@RES_LOC@"
+#endif //SQP_RES_LOC_H_IN_H

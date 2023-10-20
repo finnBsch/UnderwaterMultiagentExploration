@@ -1,0 +1,3 @@
+yaw_rate_max = 0.9
+accel_max = 1.0
+speed_max = 1.0

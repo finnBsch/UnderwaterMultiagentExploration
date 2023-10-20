@@ -1,0 +1,33 @@
+[general]
+N_X = 20
+N_Y = 20
+size_x = 15.0
+size_y = 10.0
+
+[energies]
+field_neighbors = true
+flow_neighbors = true
+flow_conservation = true
+obstacle_flow = true
+flow_field = false
+
+[field_params]
+prior_mean = 0.0
+prior_sigma = 5.0
+sigma_zeta = 0.0
+sigma_p = 0.1
+edge_prior_var = 4.0
+sigma_s = 0.1
+sigma_flow = 0.1
+
+
+[flow_field_params]
+prior_mean_x = 0.0  # prior belief for flow in x
+prior_mean_y = 0.0  # prior belief for flow in y
+prior_sigma = 5.0  # prior belief variance
+sigma_zeta = 0.0
+sigma_p = 0.7  # variance of the flow field
+edge_prior_var = 4.0
+sigma_s = 0.1  # variance of the flow field measurements
+sigma_c = 0.048 # variance of the flow field conservations
+sigma_o = 0.1  # variance of the obstacle influence on the flow field

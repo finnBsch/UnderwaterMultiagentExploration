@@ -1,0 +1,30 @@
+[general]
+batch_size = 1
+draw_all = false
+num_nodes = 7000
+#expand_radius = 0.2
+#rewire_radius = 0.3
+expand_radius = 1.2
+rewire_radius = 2.5
+#size_x = 25.0
+#size_y = 20.0
+size_x = 10.0
+size_y = 5.0
+offset_replan = 2
+min_tail_length = 3  # to not end in the wall
+maximize_util = false
+
+[path_cost]
+weight_distance = 1.0
+weight_steering = 30.0
+
+[information]
+#gamma = 0.99
+#alpha = 1.1
+#weight_mean = 0.0
+#weight_source = 100.0
+gamma = 1.0
+alpha = 0.9
+discount_info = 10.0
+weight_mean = 0.0
+weight_source = 5.0

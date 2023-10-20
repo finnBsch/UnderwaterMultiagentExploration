@@ -1,0 +1,4 @@
+#ifndef RRT_RES_LOC_H_IN_H
+#define RRT_RES_LOC_H_IN_H
+#define RES_LOC "@RES_LOC@"
+#endif //SQP_RES_LOC_H_IN_H

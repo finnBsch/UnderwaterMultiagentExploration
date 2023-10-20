@@ -1,0 +1,9 @@
+[viz_params]
+draw_map = true
+draw_uncertainty= true
+draw_groundtruth = true
+res_x = 1900
+offset_x = 0
+offset_y = 0
+margin = 0.005
+infobox = 0.1

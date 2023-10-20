@@ -1,0 +1,51 @@
+[general]
+N_horizon = 10
+num_agents = 4
+agent_type = "bicycle" # "hippocampus" or "bluerov" or "bicycle"
+sqp_iters = 15
+alpha_damping = 0.1
+dt = 0.35
+viz_all = true
+jit = false
+use_generated_code = false
+generate_code = false
+
+[modules]
+information_cost = true
+path_tracking = true
+corridor_constraint = true
+communication_constraint = true
+distribution_cost = true
+agent_collision_constraint = true
+nearest_obstacle_constraint = false
+
+[information]
+linear_weight = 4.0
+
+[tracking]
+progress_weight = 110.0  # 40
+lag_weight = 1000.0 # 100
+contouring_weight = 3.0  # 10.0
+max_progress = 30.0
+
+[nearest_obstacle]
+slack_weight = 1000.0
+
+[collision]
+slack_weight = 1000.0
+collision_distance = 1.0
+
+[connectivity]
+slack_weight = 500.0
+r_c = 4.0
+fiedler_eps = 0.1
+
+[distribution]
+lag_weight = 1000.0
+distribution_weight = 0.90
+debug_draw = true
+
+[corridor]
+lag_weight = 2000.0
+slack_weight = 100.0
+debug_draw = false

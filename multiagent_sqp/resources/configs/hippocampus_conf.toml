@@ -1,0 +1,4 @@
+yaw_rate_max = 1.0
+accel_max = 0.5
+speed_max = 1.5
+damping_factor = 0.7
