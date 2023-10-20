@@ -10,5 +10,6 @@ The planner optimizes the paths in a dedicated thread.
 - **multiagent_sqp**: Contains a MultiAgent MPC problem that tracks the reference path, in this work provided by the RRT* planner, ensures continuous connectivity and collision avoidance between all agents, and maximizes individual information gain.
 The problem is formulated as an SQP and then solved using CasaDi and OSQP.
 
+Each library is configured using .toml files that can be found in the resources directory of the respective library.
 ## Dependencies
 [SFML](https://www.sfml-dev.org/), [CasADi](https://web.casadi.org/) C++ (built with OSQP), and [Eigen3](https://eigen.tuxfamily.org/index.php?title=Main_Page).
