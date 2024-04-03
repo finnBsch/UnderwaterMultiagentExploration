@@ -34,5 +34,8 @@ git clone https://github.com/casadi/casadi.git
 cd casadi
 mkdir build
 cd build
-cmake .. (configure with osqp with ccmake)
+cmake ..
+ccmake . # and set everything with OSQP to yes, configure, generate
+make -j8
+sudo make install
 ```
