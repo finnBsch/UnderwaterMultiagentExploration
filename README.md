@@ -13,3 +13,4 @@ The problem is formulated as an SQP and then solved using CasaDi and OSQP.
 Each library is configured using .toml files that can be found in the resources directory of the respective library.
 ## Dependencies
 [SFML](https://www.sfml-dev.org/), [CasADi](https://web.casadi.org/) C++ (built with OSQP), and [Eigen3](https://eigen.tuxfamily.org/index.php?title=Main_Page).
+[LibInterpolate](https://github.com/CD3/libInterpolate).
