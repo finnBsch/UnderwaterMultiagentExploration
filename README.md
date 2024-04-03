@@ -16,11 +16,18 @@ Each library is configured using .toml files that can be found in the resources 
 [LibInterpolate](https://github.com/CD3/libInterpolate).
 
 sfml:
+```
 sudo apt install libsfml-dev
+```
 eigen3:
+```
 sudo apt install libeigen3-dev
+```
+
 libinterpolate:
+
 see [LibInterpolate](https://github.com/CD3/libInterpolate)
+
 casadi:
 ```
 git clone https://github.com/casadi/casadi.git
