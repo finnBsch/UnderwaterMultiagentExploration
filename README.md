@@ -12,8 +12,7 @@ The problem is formulated as an SQP and then solved using CasaDi and OSQP.
 
 Each library is configured using .toml files that can be found in the resources directory of the respective library.
 ## Dependencies
-[SFML](https://www.sfml-dev.org/), [CasADi](https://web.casadi.org/) C++ (built with OSQP), and [Eigen3](https://eigen.tuxfamily.org/index.php?title=Main_Page).
-[LibInterpolate](https://github.com/CD3/libInterpolate).
+[SFML](https://www.sfml-dev.org/), [CasADi](https://web.casadi.org/) C++ (built with OSQP), [Eigen3](https://eigen.tuxfamily.org/index.php?title=Main_Page), [LibInterpolate](https://github.com/CD3/libInterpolate), nanoflann 
 
 sfml:
 ```
@@ -39,3 +38,8 @@ ccmake . # and set everything with OSQP to yes, configure, generate
 make -j8
 sudo make install
 ```
+nanoflann:
+```
+sudo apt install libnanoflann-dev
+```
+

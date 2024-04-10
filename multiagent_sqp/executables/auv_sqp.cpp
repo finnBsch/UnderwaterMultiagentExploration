@@ -16,7 +16,7 @@ namespace E = Eigen;
 
 int main() {
     TestField info_field;
-    Path path;
+    SplinePath path;
     int N = 200;
     SQPParams params;
     Eigen::Matrix<double, Eigen::Dynamic, Eigen::Dynamic> trajectory;
@@ -29,8 +29,9 @@ int main() {
     }
     float sx = 15;
     float sy = 15;
+    std::vector<SQPObstacle*> obstacles;
     SQPMultiAgent opt(params, &path, &info_field,
-                      Eigen::Matrix<double, Eigen::Dynamic, 1>());
+                      current_state, &obstacles);
     opt.solve(current_state, true);
     sf::ContextSettings settings( 0, 0, 8);
     auto window = sf::RenderWindow(sf::VideoMode (1000, 1000), "sqp_test",

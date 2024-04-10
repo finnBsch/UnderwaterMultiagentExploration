@@ -87,7 +87,7 @@ protected:
 public:
     void buildTestPath();
     void postUpdate();
-    SplinePath(    std::vector<SQPObstacle*>* obstacles);
+    SplinePath(std::vector<SQPObstacle*>* obstacles);
     std::array<double, 8> linSegment(double theta) const;
     double getMaxTheta() const;
     void draw(sf::RenderTarget &target, sf::RenderStates states) const;
